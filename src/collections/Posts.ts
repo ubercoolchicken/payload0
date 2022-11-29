@@ -2,12 +2,10 @@ import { CollectionConfig } from 'payload/types';
 
 const Posts: CollectionConfig = {
   slug: 'posts',
-  upload: { staticURL: '/uploads', staticDir: '/uploads' },  admin: {
+  upload: { staticURL: '/uploads', staticDir: '/uploads' },
+  admin: {
     defaultColumns: ['title', 'author', 'category', 'tags', 'status'],
     useAsTitle: 'title',
-  },
-  access: {
-    read: () => true,
   },
   fields: [
     {

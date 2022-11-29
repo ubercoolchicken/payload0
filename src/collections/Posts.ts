@@ -2,7 +2,7 @@ import { CollectionConfig } from 'payload/types';
 
 const Posts: CollectionConfig = {
   slug: 'posts',
-  admin: {
+  upload: { staticURL: '/uploads', staticDir: '/uploads' },  admin: {
     defaultColumns: ['title', 'author', 'category', 'tags', 'status'],
     useAsTitle: 'title',
   },
